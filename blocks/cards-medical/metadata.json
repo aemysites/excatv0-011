@@ -1,0 +1,54 @@
+{
+  "variantName": "cards-medical",
+  "baseBlock": "cards",
+  "version": "1.0.0",
+  "created": "2025-10-30T09:29:47.022Z",
+  "sourceContext": {
+    "originUrl": "https://www.mein-medcampus.de/",
+    "originPage": "medical content dashboard",
+    "screenshotPath": "blocks/cards-medical/reference-screenshot.png",
+    "blockPosition": "middle"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "compact",
+    "purpose": "medical-articles",
+    "imagePattern": "noimg",
+    "textLength": "medium"
+  },
+  "contentPattern": {
+    "structure": "heading + description + save link",
+    "headingMaxLength": 100,
+    "descriptionMaxLength": 300,
+    "buttonCount": 1,
+    "imageCount": 0
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "medical article listings",
+      "scientific content dashboards",
+      "text-heavy card grids",
+      "article archives"
+    ],
+    "notSuitableFor": [
+      "product pages with large images",
+      "photo galleries",
+      "visual-first content"
+    ],
+    "similarVariants": []
+  },
+  "designTokens": {
+    "primaryColor": "#5d1a8f",
+    "backgroundColor": "#ffffff",
+    "fontFamily": "system-ui, sans-serif",
+    "headingSize": "1.25rem",
+    "padding": "16px"
+  },
+  "usage": {
+    "pagesUsing": [
+      "/index"
+    ],
+    "reuseCount": 1,
+    "lastUsed": "2025-10-30T09:29:47.022Z"
+  }
+}
