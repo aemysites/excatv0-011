@@ -1,27 +1,103 @@
+/* Cards Fachinfo - Pixel-perfect pharmaceutical product buttons */
+
 .cards-fachinfo > ul {
   list-style: none;
   margin: 0;
   padding: 0;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(257px, 1fr));
-  grid-gap: 24px;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 24px;
 }
 
 .cards-fachinfo > ul > li {
-  border: 1px solid #dadada;
-  background-color: var(--background-color);
+  /* Remove default card styling - these are button-only cards */
+  border: none;
+  background-color: transparent;
 }
 
-.cards-fachinfo .cards-fachinfo-card-body {
-  margin: 16px;
+.cards-fachinfo .cards-card-body {
+  margin: 0;
+  padding: 0;
 }
 
-.cards-fachinfo .cards-fachinfo-card-image {
-  line-height: 0;
-}
-
-.cards-fachinfo > ul > li img {
+/* Button styling - pixel-perfect match to original */
+.cards-fachinfo .cards-card-body p strong a {
+  /* Layout */
+  display: inline-block;
+  box-sizing: border-box;
   width: 100%;
-  aspect-ratio: 4 / 3;
-  object-fit: cover;
+  min-height: 84.5px;
+
+  /* Spacing */
+  padding: 12px 24px;
+  margin: 0;
+
+  /* Background */
+  background-color: rgb(63, 15, 229);
+  background-image: none;
+
+  /* Border */
+  border: 1px solid rgb(63, 15, 229);
+  border-radius: 10px;
+
+  /* Typography */
+  font-family: var(--body-font-family);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 29.25px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+
+  /* Interaction */
+  cursor: pointer;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+/* Hover state */
+.cards-fachinfo .cards-card-body p strong a:hover {
+  background-color: rgb(50, 12, 183); /* Slightly darker on hover */
+  border-color: rgb(50, 12, 183);
+  box-shadow: 0 4px 8px rgba(63, 15, 229, 0.3);
+  text-decoration: none;
+}
+
+/* Focus state for accessibility */
+.cards-fachinfo .cards-card-body p strong a:focus {
+  outline: 2px solid rgb(63, 15, 229);
+  outline-offset: 2px;
+}
+
+/* Active/pressed state */
+.cards-fachinfo .cards-card-body p strong a:active {
+  background-color: rgb(40, 10, 150);
+  border-color: rgb(40, 10, 150);
+  transform: translateY(1px);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .cards-fachinfo > ul {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .cards-fachinfo .cards-card-body p strong a {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .cards-fachinfo > ul {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .cards-fachinfo > ul {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
 }
