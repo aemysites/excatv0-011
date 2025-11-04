@@ -2,7 +2,7 @@ import { fetchPlaceholders } from '../../scripts/aem.js';
 import { moveInstrumentation } from '../../scripts/scripts.js';
 
 function updateActiveSlide(slide) {
-  const block = slide.closest('.carousel');
+  const block = slide.closest('[class*="carousel"]');
   const slideIndex = parseInt(slide.dataset.slideIndex, 10);
   block.dataset.activeSlide = slideIndex;
 
@@ -31,16 +31,23 @@ function updateActiveSlide(slide) {
 
 export function showSlide(block, slideIndex = 0) {
   const slides = block.querySelectorAll('.carousel-slide');
+  if (!slides || slides.length === 0) return;
+
   let realSlideIndex = slideIndex < 0 ? slides.length - 1 : slideIndex;
   if (slideIndex >= slides.length) realSlideIndex = 0;
   const activeSlide = slides[realSlideIndex];
 
+  if (!activeSlide) return;
+
   activeSlide.querySelectorAll('a').forEach((link) => link.removeAttribute('tabindex'));
-  block.querySelector('.carousel-slides').scrollTo({
-    top: 0,
-    left: activeSlide.offsetLeft,
-    behavior: 'smooth',
-  });
+  const slidesContainer = block.querySelector('.carousel-slides');
+  if (slidesContainer && activeSlide) {
+    slidesContainer.scrollTo({
+      top: 0,
+      left: activeSlide.offsetLeft,
+      behavior: 'smooth',
+    });
+  }
 }
 
 function bindEvents(block) {
@@ -145,6 +152,9 @@ export default async function decorate(block) {
 
   container.append(slidesWrapper);
   block.prepend(container);
+
+  // Initialize active slide
+  block.dataset.activeSlide = 0;
 
   if (!isSingleSlide) {
     bindEvents(block);

@@ -1,153 +1,179 @@
-.carousel-promo .carousel-promo-slides-container {
+/* Carousel container - matches Panasonic source */
+.carousel-promo {
   position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.carousel-promo .carousel-promo-slides,
-.carousel-promo .carousel-promo-slide-indicators {
+.carousel-promo .carousel-slides-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.carousel-promo .carousel-slides,
+.carousel-promo .carousel-slide-indicators {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.carousel-promo .carousel-promo-slides {
+.carousel-promo .carousel-slides {
   display: flex;
   scroll-behavior: smooth;
   scroll-snap-type: x mandatory;
   overflow: scroll clip;
+  height: 390px;
 }
 
-.carousel-promo .carousel-promo-slides::-webkit-scrollbar {
+.carousel-promo .carousel-slides::-webkit-scrollbar {
   display: none;
 }
 
-.carousel-promo .carousel-promo-slide {
+.carousel-promo .carousel-slide {
   flex: 0 0 100%;
   scroll-snap-align: start;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
+  display: block;
   position: relative;
   width: 100%;
-  min-height: min(50vw, calc(100dvh - var(--header-height)));
+  height: 390px;
 }
 
-.carousel-promo .carousel-promo-slide:has(.carousel-promo-slide-content[data-align='center']) {
-  align-items: center;
-}
-
-.carousel-promo .carousel-promo-slide:has(.carousel-promo-slide-content[data-align='right']) {
-  align-items: flex-end;
-}
-
-.carousel-promo .carousel-promo-slide .carousel-promo-slide-image picture {
-  position: absolute;
-  inset: 0;
-}
-
-.carousel-promo .carousel-promo-slide .carousel-promo-slide-image picture > img {
+.carousel-promo .carousel-slide .carousel-slide-image {
+  width: 100%;
   height: 100%;
-  width: 100%;
-  object-fit: cover;
-}
-
-.carousel-promo .carousel-promo-slide .carousel-promo-slide-content {
-  z-index: 1;
-  margin: 68px;
-  padding: 16px;
-  color: white;
-  background-color: rgba(19 19 19 / 75%);
-  position: relative;
-  width: var(--slide-content-width, auto);
-}
-
-.carousel-promo .carousel-promo-slide-indicators {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 6px 12px;
-  padding: 12px;
-  background-color: var(--light-color);
   line-height: 0;
 }
 
-.carousel-promo .carousel-promo-slide-indicator button {
-  width: 24px;
-  height: 24px;
+.carousel-promo .carousel-slide .carousel-slide-image picture {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.carousel-promo .carousel-slide .carousel-slide-image picture > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+/* Hide content overlays to match source (no text overlays on images) */
+.carousel-promo .carousel-slide .carousel-slide-content {
+  display: none;
+}
+
+/* Tab-style indicators - matches Panasonic source */
+.carousel-promo .carousel-slide-indicators {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: normal;
+  margin: 0 auto;
+  padding: 0;
+  background-color: var(--light-color);
+  height: 44px;
+  width: 100%;
+  max-width: 780px;
+}
+
+.carousel-promo .carousel-slide-indicator {
+  position: relative;
+  width: auto;
+  min-width: 48px;
+  height: 44px;
   margin: 0;
   padding: 0;
-  border-radius: 50%;
-  background-color: #dadada;
+}
+
+.carousel-promo .carousel-slide-indicator button {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0 12px;
+  background-color: transparent;
+  color: var(--text-color);
+  border: none;
+  border-radius: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 44px;
+  text-align: center;
+  cursor: pointer;
   transition: background-color 0.2s;
+  white-space: nowrap;
 }
 
-.carousel-promo .carousel-promo-slide-indicator button:disabled,
-.carousel-promo .carousel-promo-slide-indicator button:hover,
-.carousel-promo .carousel-promo-slide-indicator button:focus-visible {
-  background-color: var(--text-color);
+.carousel-promo .carousel-slide-indicator button:disabled,
+.carousel-promo .carousel-slide-indicator button:hover,
+.carousel-promo .carousel-slide-indicator button:focus-visible {
+  background-color: #f2f2f2;
 }
 
-.carousel-promo .carousel-promo-navigation-buttons {
+/* Navigation buttons - positioned above slides, matches Panasonic source */
+.carousel-promo .carousel-navigation-buttons {
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  left: 12px;
-  right: 12px;
+  top: 0;
+  left: 0;
+  right: 0;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  z-index: 1;
+  justify-content: flex-start;
+  gap: 0;
+  z-index: 2;
+  padding: 0;
+  background-color: transparent;
 }
 
 /* stylelint-disable-next-line no-descending-specificity */
-.carousel-promo .carousel-promo-navigation-buttons button {
+.carousel-promo .carousel-navigation-buttons button {
   position: relative;
   width: 44px;
   height: 44px;
   margin: 0;
-  border-radius: 50%;
   padding: 0;
-  background-color: rgba(19 19 19 / 25%);
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
   transition: background-color 0.2s;
 }
 
-.carousel-promo .carousel-promo-navigation-buttons button:hover,
-.carousel-promo .carousel-promo-navigation-buttons button:focus-visible {
-  background-color: rgba(19 19 19 / 75%);
+.carousel-promo .carousel-navigation-buttons button:hover,
+.carousel-promo .carousel-navigation-buttons button:focus-visible {
+  background-color: rgba(0, 0, 0, 0.05);
 }
 
-.carousel-promo .carousel-promo-navigation-buttons button::after {
+.carousel-promo .carousel-navigation-buttons button::after {
   display: block;
   content: '';
-  border: 2px solid;
+  border: 2px solid var(--text-color);
   border-bottom: 0;
   border-left: 0;
-  height: 12px;
-  width: 12px;
+  height: 10px;
+  width: 10px;
   position: absolute;
   top: 50%;
   left: calc(50% + 2px);
   transform: translate(-50%, -50%) rotate(-135deg);
 }
 
-.carousel-promo .carousel-promo-navigation-buttons button.slide-next::after {
+.carousel-promo .carousel-navigation-buttons button.slide-next::after {
   transform: translate(-50%, -50%) rotate(45deg);
   left: calc(50% - 2px);
 }
 
-@media (width >= 600px) {
-  .carousel-promo .carousel-promo-navigation-buttons {
-    left: 24px;
-    right: 24px;
+/* Responsive adjustments */
+@media (width >= 900px) {
+  .carousel-promo .carousel-slides {
+    height: 450px;
   }
 
-  .carousel-promo .carousel-promo-slide .carousel-promo-slide-content {
-    --slide-content-width: calc((100% - 184px) / 2);
-
-    margin: 92px;
-  }
-
-  .carousel-promo .carousel-promo-slide .carousel-promo-slide-content[data-align='justify'] {
-    --slide-content-width: auto;
+  .carousel-promo .carousel-slide {
+    height: 450px;
   }
 }

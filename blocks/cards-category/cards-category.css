@@ -1,27 +1,75 @@
+/* Cards container - 5-column grid matching Panasonic source */
 .cards-category > ul {
   list-style: none;
   margin: 0;
   padding: 0;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(257px, 1fr));
-  grid-gap: 24px;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 16px;
 }
 
+/* Mobile: 2 columns */
+@media (width < 600px) {
+  .cards-category > ul {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+}
+
+/* Tablet: 3 columns */
+@media (width >= 600px) and (width < 900px) {
+  .cards-category > ul {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+  }
+}
+
+/* Card styling - matches Panasonic source */
 .cards-category > ul > li {
-  border: 1px solid #dadada;
-  background-color: var(--background-color);
+  border: none;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
 }
 
-.cards-category .cards-category-card-body {
-  margin: 16px;
+.cards-category .cards-card-body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  width: 100%;
 }
 
-.cards-category .cards-category-card-image {
+.cards-category .cards-card-body p {
+  margin: 8px 0 0;
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--text-color);
+}
+
+.cards-category .cards-card-image {
   line-height: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .cards-category > ul > li img {
-  width: 100%;
-  aspect-ratio: 4 / 3;
-  object-fit: cover;
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  display: block;
+}
+
+@media (width >= 900px) {
+  .cards-category > ul > li img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .cards-category .cards-card-body p {
+    font-size: 16px;
+  }
 }

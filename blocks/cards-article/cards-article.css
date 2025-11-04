@@ -1,27 +1,56 @@
+/* Cards container - 3-column grid matching Panasonic source */
 .cards-article > ul {
   list-style: none;
   margin: 0;
   padding: 0;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(257px, 1fr));
-  grid-gap: 24px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
 }
 
+/* Mobile: 1 column */
+@media (width < 600px) {
+  .cards-article > ul {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+}
+
+/* Tablet: 2 columns */
+@media (width >= 600px) and (width < 900px) {
+  .cards-article > ul {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+/* Card styling - matches Panasonic source */
 .cards-article > ul > li {
-  border: 1px solid #dadada;
-  background-color: var(--background-color);
+  border: none;
+  background-color: var(--light-color);
+  overflow: hidden;
 }
 
-.cards-article .cards-article-card-body {
-  margin: 16px;
+.cards-article .cards-card-body {
+  margin: 0;
+  padding: 16px;
 }
 
-.cards-article .cards-article-card-image {
+.cards-article .cards-card-body p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--text-color);
+}
+
+.cards-article .cards-card-image {
   line-height: 0;
+  width: 100%;
 }
 
 .cards-article > ul > li img {
   width: 100%;
-  aspect-ratio: 4 / 3;
+  aspect-ratio: 16 / 9;
   object-fit: cover;
+  display: block;
 }
