@@ -111,16 +111,15 @@
   background-color: #f2f2f2;
 }
 
-/* Navigation buttons - positioned above slides, matches Panasonic source */
+/* Navigation buttons - positioned at bottom right of slides */
 .carousel-promo .carousel-navigation-buttons {
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
+  bottom: 16px;
+  right: 16px;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
-  gap: 0;
+  justify-content: flex-end;
+  gap: 8px;
   z-index: 2;
   padding: 0;
   background-color: transparent;
@@ -129,23 +128,25 @@
 /* stylelint-disable-next-line no-descending-specificity */
 .carousel-promo .carousel-navigation-buttons button {
   position: relative;
-  width: 44px;
-  height: 44px;
+  width: 48px;
+  height: 48px;
   margin: 0;
   padding: 0;
-  background-color: transparent;
+  background-color: rgba(255, 255, 255, 0.9);
   border: none;
-  border-radius: 0;
+  border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  transition: background-color 0.2s;
+  transition: all 0.2s;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
 
 .carousel-promo .carousel-navigation-buttons button:hover,
 .carousel-promo .carousel-navigation-buttons button:focus-visible {
-  background-color: rgba(0, 0, 0, 0.05);
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 .carousel-promo .carousel-navigation-buttons button::after {
