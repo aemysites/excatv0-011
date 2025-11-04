@@ -1,4 +1,9 @@
 /* Cards container - vertical stack matching Panasonic source */
+.cards-promo {
+  max-width: 100%;
+  overflow: hidden;
+}
+
 .cards-promo > ul {
   list-style: none;
   margin: 0;
@@ -6,6 +11,7 @@
   display: grid;
   grid-template-columns: 1fr;
   gap: 24px;
+  max-width: 100%;
 }
 
 /* Card styling - large promo cards matching Panasonic source */
@@ -14,6 +20,8 @@
   background-color: var(--light-color);
   overflow: hidden;
   position: relative;
+  max-width: 100%;
+  width: 100%;
 }
 
 .cards-promo .cards-card-body {
@@ -59,10 +67,14 @@
 .cards-promo .cards-card-image {
   line-height: 0;
   width: 100%;
+  max-width: 100%;
+  overflow: hidden;
 }
 
 .cards-promo > ul > li img {
   width: 100%;
+  max-width: 100%;
+  height: auto;
   aspect-ratio: 16 / 9;
   object-fit: cover;
   display: block;

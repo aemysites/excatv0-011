@@ -1,9 +1,9 @@
-/* Carousel container - matches Panasonic source */
+/* Carousel container - full window width */
 .carousel-promo {
   position: relative;
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
 }
 
 .carousel-promo .carousel-slides-container {
