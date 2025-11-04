@@ -277,8 +277,8 @@ main > .section {
 }
 
 main > .section > div {
-  max-width: 1200px;
-  margin: auto;
+  max-width: none;
+  margin: 0 auto;
   padding: 0 24px;
 }
 
