@@ -1,0 +1,189 @@
+/* Section container - remove constraints for carousel */
+main > .section > div.carousel-promo-container {
+  max-width: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Wrapper - full window width, no padding */
+.carousel-promo-wrapper {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  padding: 0 !important;
+  max-width: none !important;
+}
+
+/* Carousel container - full window width */
+.carousel-promo {
+  position: relative;
+  width: 100%;
+  margin: 0;
+}
+
+.carousel-promo .carousel-slides-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.carousel-promo .carousel-slides,
+.carousel-promo .carousel-slide-indicators {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.carousel-promo .carousel-slides {
+  display: flex;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  overflow: scroll clip;
+  height: auto;
+}
+
+.carousel-promo .carousel-slides::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel-promo .carousel-slide {
+  flex: 0 0 100%;
+  scroll-snap-align: start;
+  display: block;
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.carousel-promo .carousel-slide .carousel-slide-image {
+  width: 100%;
+  height: auto;
+  line-height: 0;
+}
+
+.carousel-promo .carousel-slide .carousel-slide-image picture {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.carousel-promo .carousel-slide .carousel-slide-image picture > img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
+
+/* Hide content overlays to match source (no text overlays on images) */
+.carousel-promo .carousel-slide .carousel-slide-content {
+  display: none;
+}
+
+/* Tab-style indicators - matches Panasonic source */
+.carousel-promo .carousel-slide-indicators {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: normal;
+  margin: 0 auto;
+  padding: 0;
+  background-color: var(--light-color);
+  height: 44px;
+  width: 100%;
+  max-width: 780px;
+}
+
+.carousel-promo .carousel-slide-indicator {
+  position: relative;
+  width: auto;
+  min-width: 48px;
+  height: 44px;
+  margin: 0;
+  padding: 0;
+}
+
+.carousel-promo .carousel-slide-indicator button {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0 12px;
+  background-color: transparent;
+  color: var(--text-color);
+  border: none;
+  border-radius: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 44px;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  white-space: nowrap;
+}
+
+.carousel-promo .carousel-slide-indicator button:disabled,
+.carousel-promo .carousel-slide-indicator button:hover,
+.carousel-promo .carousel-slide-indicator button:focus-visible {
+  background-color: #f2f2f2;
+}
+
+/* Navigation buttons - positioned at bottom right of slides */
+.carousel-promo .carousel-navigation-buttons {
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 8px;
+  z-index: 2;
+  padding: 0;
+  background-color: transparent;
+}
+
+/* stylelint-disable-next-line no-descending-specificity */
+.carousel-promo .carousel-navigation-buttons button {
+  position: relative;
+  width: 48px;
+  height: 48px;
+  margin: 0;
+  padding: 0;
+  background-color: rgba(255, 255, 255, 0.9);
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.2s;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.carousel-promo .carousel-navigation-buttons button:hover,
+.carousel-promo .carousel-navigation-buttons button:focus-visible {
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-promo .carousel-navigation-buttons button::after {
+  display: block;
+  content: '';
+  border: 2px solid var(--text-color);
+  border-bottom: 0;
+  border-left: 0;
+  height: 10px;
+  width: 10px;
+  position: absolute;
+  top: 50%;
+  left: calc(50% + 2px);
+  transform: translate(-50%, -50%) rotate(-135deg);
+}
+
+.carousel-promo .carousel-navigation-buttons button.slide-next::after {
+  transform: translate(-50%, -50%) rotate(45deg);
+  left: calc(50% - 2px);
+}
+
+/* Responsive adjustments */
+@media (width >= 900px) {
+  /* Heights are auto, no fixed heights needed */
+}
