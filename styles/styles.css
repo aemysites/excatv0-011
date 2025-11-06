@@ -111,6 +111,10 @@ header {
   height: var(--nav-height);
 }
 
+main {
+  padding-top: 40px;
+}
+
 header .header,
 footer .footer {
   visibility: hidden;
