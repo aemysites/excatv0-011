@@ -1,6 +1,7 @@
 .columns > div {
   display: flex;
   flex-direction: column;
+  gap: 20px;
 }
 
 .columns img {
@@ -9,25 +10,86 @@
 
 .columns > div > div {
   order: 1;
+  padding: 15px;
+  text-align: center;
 }
 
 .columns > div > .columns-img-col {
   order: 0;
+  flex: 1;
 }
 
 .columns > div > .columns-img-col img {
   display: block;
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+}
+
+/* Handle both h3 and p > strong for titles */
+.columns h3,
+.columns p:first-of-type strong:first-child {
+  display: block;
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--color-primary);
+  margin: 0 0 12px;
+  text-transform: none;
+  letter-spacing: normal;
+}
+
+/* Stats styling */
+.columns h2 {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin: 10px 0;
+}
+
+.columns p {
+  font-size: 14px;
+  line-height: 22px;
+  color: var(--text-color);
+  margin: 10px 0;
+}
+
+/* Reset first paragraph if it contains title */
+.columns p:first-of-type:has(strong:first-child) {
+  margin-top: 0;
 }
 
 @media (width >= 900px) {
   .columns > div {
     align-items: center;
-    flex-direction: unset;
-    gap: 24px;
+    flex-direction: row;
+    gap: 40px;
   }
 
   .columns > div > div {
     flex: 1;
     order: unset;
+    text-align: left;
+  }
+
+  .columns > div > .columns-img-col {
+    flex: 1;
+  }
+
+  .columns > div > .columns-img-col img {
+    margin: 0;
+    max-width: 100%;
+  }
+}
+
+@media (width >= 600px) {
+  .columns > div {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .columns > div > div {
+    flex: 0 1 calc(33.333% - 20px);
+    min-width: 200px;
   }
 }

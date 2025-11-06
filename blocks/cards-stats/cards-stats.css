@@ -1,0 +1,93 @@
+/* Cards Stats Variant - Icon + Large Number + Label + Description */
+.cards-stats > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 30px;
+}
+
+.cards-stats > ul > li {
+  border: none;
+  background-color: transparent;
+  text-align: center;
+  padding: 20px;
+}
+
+.cards-stats .cards-stats-card-image {
+  line-height: 0;
+  margin-bottom: 20px;
+}
+
+.cards-stats .cards-stats-card-image img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  margin: 0 auto;
+}
+
+.cards-stats .cards-stats-card-body {
+  padding: 0;
+}
+
+/* Handle both h3 and p > strong for numbers */
+.cards-stats .cards-stats-card-body h3,
+.cards-stats .cards-stats-card-body p:first-of-type strong {
+  display: block;
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin: 15px 0 10px;
+  line-height: 1.2;
+}
+
+/* Second heading or second strong tag (label) */
+.cards-stats .cards-stats-card-body h3 + h3,
+.cards-stats .cards-stats-card-body p:first-of-type strong + br + strong {
+  display: block;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--color-primary);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin: 10px 0;
+}
+
+.cards-stats .cards-stats-card-body p {
+  font-size: 14px;
+  line-height: 22px;
+  color: var(--text-color);
+  margin: 15px 0 0;
+}
+
+/* Reset first paragraph if it contains the structured content */
+.cards-stats .cards-stats-card-body p:first-of-type {
+  margin: 0;
+  line-height: 1.4;
+}
+
+.cards-stats .cards-stats-card-body p:first-of-type strong:first-child {
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--color-primary);
+  display: block;
+  margin: 15px 0 10px;
+  line-height: 1.2;
+}
+
+.cards-stats .cards-stats-card-body p:first-of-type strong:nth-of-type(2) {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--color-primary);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  display: block;
+  margin: 10px 0;
+}
+
+@media (width >= 900px) {
+  .cards-stats > ul {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

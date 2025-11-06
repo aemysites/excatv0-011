@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<script src="/scripts/aem.js" type="module"></script>
+<script src="/scripts/scripts.js" type="module"></script>
+<link rel="stylesheet" href="/styles/styles.css"/>
+</head>
+<body>
+<header></header>
+<main>
+<div><h1 id="block-variants-documentation">Block Variants Documentation</h1><p>This document explains the different block variants used in the Maruti Suzuki Driving School EDS site.</p><h2 id="cards-variants">Cards Variants</h2><p>The Cards block has <strong>4 different variants</strong> to support different content layouts:</p><h3 id="cards-default---blockscards">1. <strong>Cards (Default)</strong> - <code>/blocks/cards/</code></h3><p><strong>Usage:</strong> General-purpose cards with image, title, description, and call-to-action
+<strong>Syntax:</strong> <code>| Cards |  |</code></p><p><strong>Features:</strong></p><ul>
+<li>Product/course cards with vertical layout</li>
+<li>Image at top (16:9 aspect ratio)</li>
+<li>Title (H3) in primary blue</li>
+<li>Description paragraph</li>
+<li>Pricing information</li>
+<li>CTA button</li>
+<li>Card shadows with hover effect</li>
+<li>Border radius: 6px</li>
+</ul><p><strong>Best for:</strong> Course listings, product cards, detailed information cards</p></div>
+<div><h3 id="cards-stats---blockscards-stats">2. <strong>Cards-stats</strong> - <code>/blocks/cards-stats/</code></h3><p><strong>Usage:</strong> Statistics showcase with icon, large number, label, and description
+<strong>Syntax:</strong> <code>| Cards-stats |  |</code></p><p><strong>Features:</strong></p><ul>
+<li>Icon at top (60x60px)</li>
+<li>Very large number (36px, bold, primary blue)</li>
+<li>Uppercase label (12px, bold, primary blue)</li>
+<li>Description paragraph below</li>
+<li>No borders or shadows</li>
+<li>Center-aligned text</li>
+<li>Transparent background</li>
+</ul><p><strong>Content Structure:</strong></p><pre><code class="language-markdown">| Cards-stats |  |
+| --- | --- |
+| ![Icon](/path/to/icon.png) | ### 22 00 000+&#x3C;br>HAPPY STUDENTS&#x3C;br>Description text here |
+</code></pre><p><strong>Best for:</strong> Statistics, achievements, key metrics display</p></div>
+<div><h3 id="cards-icon---blockscards-icon">3. <strong>Cards-icon</strong> - <code>/blocks/cards-icon/</code></h3><p><strong>Usage:</strong> Simple icon cards with number and label (no description)
+<strong>Syntax:</strong> <code>| Cards-icon |  |</code></p><p><strong>Features:</strong></p><ul>
+<li>Small icon at top (50x50px)</li>
+<li>Extra-large number (48px, bold, primary blue)</li>
+<li>Uppercase label (11px, bold)</li>
+<li>No borders or shadows</li>
+<li>No description paragraph</li>
+<li>Center-aligned text</li>
+<li>Transparent background</li>
+<li>4-column grid on desktop</li>
+</ul><p><strong>Content Structure:</strong></p><pre><code class="language-markdown">| Cards-icon |  |
+| --- | --- |
+| ![Icon](/path/to/icon.png) | ### 10&#x3C;br>MINUTES TO FINISH |
+</code></pre><p><strong>Best for:</strong> Feature highlights, quiz stats, simple metrics, quick facts</p></div>
+<div><h3 id="cards-service---blockscards-service">4. <strong>Cards-service</strong> - <code>/blocks/cards-service/</code></h3><p><strong>Usage:</strong> Service/feature cards with icon, title, and description
+<strong>Syntax:</strong> <code>| Cards-service |  |</code></p><p><strong>Features:</strong></p><ul>
+<li>Large icon at top (80x80px)</li>
+<li>Title (H3, 18px, primary blue)</li>
+<li>Description paragraph</li>
+<li>White background card</li>
+<li>Border: 1px solid #e0e0e0</li>
+<li>Card shadows with hover effect</li>
+<li>Border radius: 6px</li>
+<li>Center-aligned content</li>
+<li>Extra padding (30px)</li>
+</ul><p><strong>Content Structure:</strong></p><pre><code class="language-markdown">| Cards-service |  |
+| --- | --- |
+| ![Icon](/path/to/icon.png) | ### Service Title&#x3C;br>Service description goes here |
+</code></pre><p><strong>Best for:</strong> Services, features, value propositions, benefits</p></div>
+<div><h2 id="carousel-variants">Carousel Variants</h2><p>The Carousel block has <strong>2 different variants</strong> to support different content layouts:</p><h3 id="carousel-default---blockscarousel">1. <strong>Carousel (Default)</strong> - <code>/blocks/carousel/</code></h3><p><strong>Usage:</strong> Homepage hero section with full-width background images
+<strong>Syntax:</strong> <code>| Carousel |  |</code></p><p><strong>Features:</strong></p><ul>
+<li>Full-width background images</li>
+<li>Text overlay (white text on image)</li>
+<li>Slide indicators (white dots on blue bar)</li>
+<li>Navigation arrows</li>
+<li>Minimum height: 50vw</li>
+<li>Auto-play carousel functionality</li>
+</ul><p><strong>Content Structure:</strong></p><pre><code class="language-markdown">| Carousel |  |
+| --- | --- |
+| ![Slide Image](/path/to/image.jpg) | ## Heading Text&#x3C;br>Description&#x3C;br>[CTA Link](/url) |
+</code></pre><p><strong>Best for:</strong> Hero sections, full-width image sliders with minimal text overlay</p></div>
+<div><h3 id="carousel-cards---blockscarousel-cards">2. <strong>Carousel-cards</strong> - <code>/blocks/carousel-cards/</code></h3><p><strong>Usage:</strong> Course/blog listings in horizontal card slider
+<strong>Syntax:</strong> <code>| Carousel-cards |  |</code></p><p><strong>Features:</strong></p><ul>
+<li>Card-based carousel layout</li>
+<li>Image at top (16:9 aspect ratio)</li>
+<li>Title (H3) in primary blue</li>
+<li>Description paragraph</li>
+<li>CTA button at bottom</li>
+<li>Card shadows with hover effects</li>
+<li>Border radius: 6px</li>
+<li>Navigation arrows (left/right)</li>
+<li>Slide indicators at bottom (white dots on blue bar)</li>
+<li>Responsive: Shows 1 card on mobile, 2 on tablet, 3 on desktop</li>
+<li>Smooth scroll behavior</li>
+</ul><p><strong>Content Structure:</strong></p><pre><code class="language-markdown">| Carousel-cards |  |
+| --- | --- |
+| ![Course Image](/path/to/image.jpg) | ### Course Title&#x3C;br>Course description goes here.&#x3C;br>**6 Modules** \| **31 Hours**&#x3C;br>₹ 9 000*&#x3C;br>[View Course](/url) |
+</code></pre><p><strong>Best for:</strong> Course listings, blog article previews, product carousels, any card-based content in a slider</p></div>
+<div><h2 id="columns-variants">Columns Variants</h2><p>The Columns block has <strong>1 main style</strong> with responsive behavior:</p><h3 id="columns-default---blockscolumns"><strong>Columns (Default)</strong> - <code>/blocks/columns/</code></h3><p><strong>Usage:</strong> Image + content side-by-side layout or stat displays
+<strong>Syntax:</strong> <code>| Columns |  |</code></p><p><strong>Features:</strong></p><ul>
+<li>Flexible 2-column layout (image + text)</li>
+<li>Can also display statistics in grid format</li>
+<li>Responsive: stacks vertically on mobile</li>
+<li>Center-aligned on mobile, left-aligned on desktop</li>
+<li>Supports icons (60px max width)</li>
+</ul><p><strong>Content Structure:</strong></p><pre><code class="language-markdown">| Columns |  |
+| --- | --- |
+| ![Image](/path/to/image.jpg) | ### Title&#x3C;br>Description&#x3C;br>[CTA Link](/url) |
+</code></pre></div>
+<div><h2 id="accordion-variants">Accordion Variants</h2><p>The Accordion block has <strong>1 main style</strong>:</p><h3 id="accordion-default---blocksaccordion"><strong>Accordion (Default)</strong> - <code>/blocks/accordion/</code></h3><p><strong>Usage:</strong> FAQ sections, collapsible Q&#x26;A
+<strong>Syntax:</strong> <code>| Accordion |  |</code></p><p><strong>Features:</strong></p><ul>
+<li>Question in uppercase, primary blue, bold</li>
+<li>Plus/minus icon (right-aligned)</li>
+<li>Answer in regular text</li>
+<li>Light gray background when open</li>
+<li>Border radius: 4px</li>
+<li>15px spacing between items</li>
+</ul><p><strong>Content Structure:</strong></p><pre><code class="language-markdown">| Accordion |  |
+| --- | --- |
+| Question text here | Answer text goes here |
+</code></pre></div>
+<div><h2 id="choosing-the-right-variant">Choosing the Right Variant</h2><h3 id="use-cards-default-when">Use <strong>Cards (default)</strong> when:</h3><ul>
+<li>You need detailed product/course cards in a static grid</li>
+<li>You want images with aspect ratio</li>
+<li>You need CTA buttons within cards</li>
+<li>You want hover effects and shadows</li>
+<li>Content should be visible all at once (not in a slider)</li>
+</ul><h3 id="use-cards-stats-when">Use <strong>Cards-stats</strong> when:</h3><ul>
+<li>Showing statistics or achievements</li>
+<li>Displaying large numbers with context</li>
+<li>Need icon + number + label + description</li>
+<li>Want a clean, centerpiece layout</li>
+</ul><h3 id="use-cards-icon-when">Use <strong>Cards-icon</strong> when:</h3><ul>
+<li>Showing simple metrics or features</li>
+<li>Displaying numbers without long descriptions</li>
+<li>Need a compact 4-column grid</li>
+<li>Want a minimalist icon + number layout</li>
+</ul><h3 id="use-cards-service-when">Use <strong>Cards-service</strong> when:</h3><ul>
+<li>Highlighting services or features</li>
+<li>Need icon + title + short description</li>
+<li>Want boxed cards with shadows</li>
+<li>Need a clean, centered layout</li>
+</ul><h3 id="use-carousel-default-when">Use <strong>Carousel (default)</strong> when:</h3><ul>
+<li>Creating a hero section with full-width images</li>
+<li>Need text overlay on background images</li>
+<li>Want auto-rotating promotional banners</li>
+<li>Minimal text content with strong visual focus</li>
+</ul><h3 id="use-carousel-cards-when">Use <strong>Carousel-cards</strong> when:</h3><ul>
+<li>Displaying multiple courses, products, or blog articles</li>
+<li>Content is card-based with image + text + CTA</li>
+<li>Want horizontal scrolling card layout</li>
+<li>Need to show multiple items in a slider format</li>
+<li>Space-efficient way to display many items</li>
+</ul></div>
+<div><h2 id="implementation-notes">Implementation Notes</h2><ol>
+<li>
+<p><strong>Block variant syntax in EDS:</strong></p>
+<ul>
+<li>Default: <code>| BlockName |  |</code></li>
+<li>Variant: <code>| BlockName-variant |  |</code> (use hyphen, not parentheses)</li>
+</ul>
+</li>
+<li>
+<p><strong>File structure:</strong></p>
+<ul>
+<li>Default block: <code>/blocks/blockname/</code></li>
+<li>Variant: <code>/blocks/blockname-variant/</code></li>
+</ul>
+</li>
+<li>
+<p><strong>CSS naming:</strong></p>
+<ul>
+<li>Use block name as prefix: <code>.cards-stats</code>, <code>.cards-icon</code>, <code>.cards-service</code></li>
+<li>Maintain consistent class names within variants</li>
+</ul>
+</li>
+<li>
+<p><strong>JavaScript decoration:</strong></p>
+<ul>
+<li>Each variant has its own JS file</li>
+<li>Follows same decoration pattern as default block</li>
+<li>Adds variant-specific class names</li>
+</ul>
+</li>
+</ol></div>
+<div><h2 id="visual-examples">Visual Examples</h2><h3 id="cards-stats---why-choose-section-line-27">Cards-stats - "Why Choose" Section (Line 27)</h3><p>Large icons with big numbers and uppercase labels
+Used for: Happy Students, Expert Trainers, Training Schools statistics</p><h3 id="cards-icon---quiz-features-section-line-57">Cards-icon - "Quiz Features" Section (Line 57)</h3><p>Small icons with extra-large numbers in a 4-column grid
+Used for: Quiz stats (10 minutes, 10 questions, 4 categories, winners)</p><h3 id="cards-service---value-added-services-section-line-99">Cards-service - "Value-Added Services" Section (Line 99)</h3><p>Boxed cards with medium icons and service descriptions
+Used for: Assistance on own car, Training on upgraded car models, License assistance</p><h3 id="carousel-default---hero-section-line-9">Carousel (default) - "Hero Section" (Line 9)</h3><p>Full-width image slider with text overlay
+Used for: Homepage hero slides with driving school images</p><h3 id="carousel-cards---choose-your-course-section-line-78">Carousel-cards - "Choose Your Course" Section (Line 78)</h3><p>Course cards in horizontal slider with images, details, pricing, and CTA buttons
+Used for: Learner courses, Advanced courses display</p><h3 id="carousel-cards---essential-driving-tips-section-line-143">Carousel-cards - "Essential Driving Tips" Section (Line 143)</h3><p>Blog article cards in horizontal slider with featured images and excerpts
+Used for: Blog post previews with read more links</p></div>
+<div><p>Last updated: 2025-11-06</p></div>
+</main>
+<footer></footer>
+</body>
+</html>

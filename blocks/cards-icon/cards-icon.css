@@ -1,0 +1,74 @@
+/* Cards Icon Variant - Simple Icon + Number + Label */
+.cards-icon > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 25px;
+}
+
+.cards-icon > ul > li {
+  border: none;
+  background-color: transparent;
+  text-align: center;
+  padding: 15px;
+}
+
+.cards-icon .cards-icon-card-image {
+  line-height: 0;
+  margin-bottom: 15px;
+}
+
+.cards-icon .cards-icon-card-image img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  margin: 0 auto;
+}
+
+.cards-icon .cards-icon-card-body {
+  padding: 0;
+}
+
+/* Handle both h3 and p > strong for numbers */
+.cards-icon .cards-icon-card-body h3,
+.cards-icon .cards-icon-card-body p strong:first-child {
+  display: block;
+  font-size: 48px;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin: 10px 0 5px;
+  line-height: 1;
+}
+
+/* Second heading or second strong tag (label) */
+.cards-icon .cards-icon-card-body h3 + h3,
+.cards-icon .cards-icon-card-body p strong:nth-of-type(2) {
+  display: block;
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--text-color);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin: 5px 0;
+  line-height: 1.4;
+}
+
+/* Reset paragraph styling for icon cards */
+.cards-icon .cards-icon-card-body p {
+  margin: 0;
+  font-size: inherit;
+}
+
+@media (width >= 600px) {
+  .cards-icon > ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (width >= 900px) {
+  .cards-icon > ul {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
