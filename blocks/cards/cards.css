@@ -3,17 +3,70 @@
   margin: 0;
   padding: 0;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(257px, 1fr));
-  grid-gap: 24px;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 20px;
+}
+
+@media (width >= 1200px) {
+  .cards > ul {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 .cards > ul > li {
-  border: 1px solid #dadada;
+  border: 1px solid #e0e0e0;
   background-color: var(--background-color);
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s;
+}
+
+.cards > ul > li:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
 }
 
 .cards .cards-card-body {
-  margin: 16px;
+  padding: 20px;
+}
+
+/* Handle both h3 and p > strong for titles */
+.cards .cards-card-body h3,
+.cards .cards-card-body p:first-of-type strong:first-child {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--color-primary);
+}
+
+.cards .cards-card-body p {
+  margin: 10px 0;
+  font-size: 14px;
+  line-height: 22px;
+  color: var(--text-color);
+}
+
+/* Reset first paragraph styling if it contains title */
+.cards .cards-card-body p:first-of-type:has(strong:first-child) {
+  margin-top: 0;
+}
+
+.cards .cards-card-body h4 {
+  font-size: 40px;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin: 10px 0;
+  text-align: center;
+}
+
+.cards .cards-card-body h5 {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--text-color);
+  text-transform: uppercase;
+  margin: 10px 0 5px;
 }
 
 .cards .cards-card-image {
@@ -22,6 +75,20 @@
 
 .cards > ul > li img {
   width: 100%;
-  aspect-ratio: 4 / 3;
+  aspect-ratio: 16 / 9;
   object-fit: cover;
+}
+
+/* Price section styling */
+.cards .cards-card-body > p:has(strong) {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text-color);
+  text-align: center;
+}
+
+/* Button styling within cards */
+.cards .cards-card-body .button-container {
+  text-align: center;
+  margin-top: 15px;
 }

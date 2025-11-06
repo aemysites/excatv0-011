@@ -1,72 +1,34 @@
-<!-- source: https://panasonic.jp/ -->
+# Maruti Suzuki Driving School
 
 +-----------------------------+
 | Section Metadata            |
 +------------------+----------+
-| style            | light    |
+| style            | dark     |
 +------------------+----------+
 
-+-------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------+
-| **Carousel-Promo**                                                                                                                                                                 |
-+-------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------+
-| ![私たちは問い続ける。 Panasonic Quality SINCE 1918](https://panasonic.jp/content/panasonic/jp/ja/top/_jcr_content/root/main/componentContainer1/c_lay002_copy_copy/c_lay003_copy_copy_c/item_1690165039790/c_gen003_copy.coreimg.jpeg/1761712496873/2510-pc-1.jpeg) |                                                              |
-+-------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------+
-| ![わたしにも、ふたりにも、心地よく。](https://panasonic.jp/content/panasonic/jp/ja/top/_jcr_content/root/main/componentContainer1/c_lay002_copy_copy/c_lay003_copy_copy_c/item_1692254958118/c_gen003_copy_copy_c.coreimg.jpeg/1761712510420/2510-pc-2.jpeg) |                                                              |
-+-------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------+
-| ![新米も古米もおいしい炊飯器 可変圧力IHジャー炊飯器 SR-X910D](https://panasonic.jp/content/panasonic/jp/ja/top/_jcr_content/root/main/componentContainer1/c_lay002_copy_copy/c_lay003_copy_copy_c/item_1687940204640/c_gen003_copy_524298892.coreimg.jpeg/1761532494077/2510-pc-3.jpeg) |                                                              |
-+-------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------+
-| ![その感動を、もっと大きく。有機ELテレビ Z95B](https://panasonic.jp/content/panasonic/jp/ja/top/_jcr_content/root/main/componentContainer1/c_lay002_copy_copy/c_lay003_copy_copy_c/item_1687940202497/c_gen003.coreimg.jpeg/1761532557162/2510-pc-4.jpeg) |                                                              |
-+-------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------+
-| ![設置スペースはコンパクトに。 冷凍室は大容量に。冷凍冷蔵庫 コンパクトBIGシリーズ NR-F55HY2](https://panasonic.jp/content/panasonic/jp/ja/top/_jcr_content/root/main/componentContainer1/c_lay002_copy_copy/c_lay003_copy_copy_c/item_1690165079764/c_gen003_copy.coreimg.jpeg/1761532702792/2510-pc-5.jpeg) |                                                              |
-+-------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------+
-
----
-
-## 商品を選ぶ
-
-+---------------------------------------------------------------------+----------------------------------------+
-| **Cards-Category**                                                                                           |
-+---------------------------------------------------------------------+----------------------------------------+
-| ![appliance](https://panasonic.jp/content/panasonic/jp/ja/top/_jcr_content/root/main/componentContainer1/c_lay001_196392464_c/item_1681433869818_c/c_lay002/c_lay002_copy/c_gen003_copy_copy.coreimg.svg/1690425113129/icon-wash-line.svg) | 生活家電                                |
-+---------------------------------------------------------------------+----------------------------------------+
-| ![air](https://panasonic.jp/content/panasonic/jp/ja/top/_jcr_content/root/main/componentContainer1/c_lay001_196392464_c/item_1681433869818_c_298613230/c_lay002_222420163/c_lay002/c_gen003_copy.coreimg.svg/1690426392883/icon-aircon-line.svg) | 空調家電・季節家電                       |
-+---------------------------------------------------------------------+----------------------------------------+
-| ![kitchen](https://panasonic.jp/content/panasonic/jp/ja/top/_jcr_content/root/main/componentContainer1/c_lay001_196392464_c/item_1681433869818_c_1886022412/c_lay002_1405734595/c_lay002/c_gen003_copy_copy.coreimg.svg/1690428125984/icon-range-line.svg) | キッチン家電・調理家電                   |
-+---------------------------------------------------------------------+----------------------------------------+
-| ![av](https://panasonic.jp/content/panasonic/jp/ja/top/_jcr_content/root/main/componentContainer1/c_lay001_196392464_c/item_1681433869818_c_787340654/c_lay002/c_lay002_copy/c_gen003_copy_copy.coreimg.svg/1690428210879/icon-tv-line.svg) | AV機器・カメラ                           |
-+---------------------------------------------------------------------+----------------------------------------+
-| ![beauty](https://panasonic.jp/content/panasonic/jp/ja/top/_jcr_content/root/main/componentContainer1/c_lay001_196392464_c/item_1681433869818/c_lay002_367361825/c_lay002/c_gen003_copy.coreimg.svg/1690428600074/icon-drier-line.svg) | 美容家電・健康家電                       |
-+---------------------------------------------------------------------+----------------------------------------+
-| ![battery](https://panasonic.jp/content/panasonic/jp/ja/top/_jcr_content/root/main/componentContainer1/c_lay001_196392464_c/item_1681433875293_c/c_lay002/c_lay002_copy/c_gen003_copy_copy.coreimg.svg/1690428745763/icon-battery-line.svg) | 電池                                    |
-+---------------------------------------------------------------------+----------------------------------------+
-| ![phone](https://panasonic.jp/content/panasonic/jp/ja/top/_jcr_content/root/main/componentContainer1/c_lay001_196392464_c/item_1681433875293/c_lay002/c_lay002_copy/c_gen003_copy_copy.coreimg.svg/1690429473133/icon-phone-line.svg) | 電話                                    |
-+---------------------------------------------------------------------+----------------------------------------+
-| ![pc](https://panasonic.jp/content/panasonic/jp/ja/top/_jcr_content/root/main/componentContainer1/c_lay001_196392464_c/item_1681433869818_c_513964274/c_lay002_910521301/c_lay002/c_gen003_copy_copy.coreimg.svg/1690429773080/icon-notepc-line.svg) | パソコン                                |
-+---------------------------------------------------------------------+----------------------------------------+
-| ![car](https://panasonic.jp/content/panasonic/jp/ja/top/_jcr_content/root/main/componentContainer1/c_lay001_196392464_c/item_copy_134501138_/c_lay002_1012315094/c_lay002/c_gen003.coreimg.svg/1690429990167/icon-carnavi.svg) | カーナビ                                |
-+---------------------------------------------------------------------+----------------------------------------+
-| ![house](https://panasonic.jp/content/panasonic/jp/ja/top/_jcr_content/root/main/componentContainer1/c_lay001_196392464_c/item_copy_158003889__1012261437/c_lay002_1679401443/c_lay002/c_gen003.coreimg.svg/1690430049848/icon-home-line.svg) | 住宅設備                                |
-+---------------------------------------------------------------------+----------------------------------------+
+| Carousel |  |
+| --- | --- |
+| ![Learn Driving Mock Test](/content/images/hero-slide-1.jpg) | **LEARN DRIVING and TRAFFIC RULES that make you a better driver**<br><br>[Practice Mock Test](/mock-llr-test) |
+| ![Car Driving Training Institute](/content/images/hero-slide-2.jpg) | **LEARN DRIVING and TRAFFIC RULES that make you a better driver** |
+| ![Maruti Suzuki Driving School](/content/images/hero-slide-3.jpg) |  |
 
 ---
 
 +-----------------------------+
 | Section Metadata            |
 +------------------+----------+
-| style            | grey     |
+| style            | white    |
 +------------------+----------+
 
-## レコメンド
+## Why Choose Maruti Suzuki Driving School?
 
-+---------------------------------------------------------------------------+----------------------------------------------------------------------+
-| **Cards-Article**                                                                                                                                                  |
-+---------------------------------------------------------------------------+----------------------------------------------------------------------+
-| ![小型充電式電池の正しい捨て方](https://panasonic.jp/content/panasonic/jp/ja/top/_jcr_content/root/main/componentContainer1/c_lay001_458118269_c/item_copy/c_gen003.coreimg.jpeg/1761532308741/rec-2510-1.jpeg) | 充電式の家電製品に内蔵されている小型充電式電池は、適切にリサイクルすることが法律で定められています。小型充電式電池が使われている製品の例や、正しい廃棄方法についてご紹介します。 |
-+---------------------------------------------------------------------------+----------------------------------------------------------------------+
-| ![エオリアアプリが支持される秘密](https://panasonic.jp/content/panasonic/jp/ja/top/_jcr_content/root/main/componentContainer1/c_lay001_458118269_c/item_1687941285946/c_gen003_copy.coreimg.jpeg/1761532286674/rec-2510-2.jpeg) | エアコンの操作をより快適にし、くらしに寄り添う「エオリアアプリ」。リモコンを超えた価値提供にこだわり、ユーザー起点で開発を担っているソフトウェアエンジニアに、難しさややりがいについて聞きました。 |
-+---------------------------------------------------------------------------+----------------------------------------------------------------------+
-| ![自宅でカンタン絶品焼き芋の作り方](https://panasonic.jp/content/panasonic/jp/ja/top/_jcr_content/root/main/componentContainer1/c_lay001_458118269_c/item_1687941285950_c/c_gen003_copy_copy.coreimg.jpeg/1761532390633/rec-2510-3.jpeg) | スーパーなどで通年目にすることの多いさつまいもですが、さつまいもにも旬があります。この記事では、さつまいもの旬や種類の違い、そして専門店のような美味しい焼き芋の作り方をご紹介します。 |
-+---------------------------------------------------------------------------+----------------------------------------------------------------------+
+Knowing how to drive a car is no longer a luxury, it's a necessity!
+
+| Cards-stats |  |
+| --- | --- |
+| ![Happy Students](/content/images/icon-happy-students.png) | **22 00 000+**<br><br>**HAPPY STUDENTS**<br><br>We have successfully transformed 22 00 000+ beginners into skilled and confident drivers. |
+| ![Expert Trainers](/content/images/icon-trainers.png) | **2 100+**<br><br>**EXPERT TRAINERS**<br><br>Get driving training from our team of driving professionals that has 2 100+ expert male and female trainers. |
+| ![Training Schools](/content/images/icon-schools.png) | **540+**<br><br>**TRAINING SCHOOLS**<br><br>We have made quality driving training accessible with our widespread network of 540+ Training Schools covering 260+ Cities. |
 
 ---
 
@@ -76,37 +38,30 @@
 | style            | light    |
 +------------------+----------+
 
-## お買い求めは
-
-+---------------------------------------------------------------------+----------------------------------------+
-| **Cards-Promo**                                                                                      |
-+---------------------------------------------------------------------+----------------------------------------+
-| ![快適で便利なくらしをサポートするパナソニックの店](https://panasonic.jp/content/panasonic/jp/ja/top/_jcr_content/root/main/componentContainer1/c_lay001_483754143_c/c_lay011/c_gen003_copy_copy.coreimg.jpeg/1760498876739/omise-pc.jpeg) | パナソニックの店                        |
-|                                                                     | 全国各地に15000店あるパナソニックの店は、みなさまの一番近くで、快適で便利なくらしをサポートする「家電のホームドクター」です。 |
-|                                                                     | [詳しく見る](https://panasonic.jp/p-shop/where/)      |
-+---------------------------------------------------------------------+----------------------------------------+
-| ![パナソニック公式オンラインストア](https://panasonic.jp/content/panasonic/jp/ja/top/_jcr_content/root/main/componentContainer1/c_lay001_483754143_c_63332248/c_lay011/c_gen003.coreimg.jpeg/1745392986027/store-pc.jpeg) | パナソニック公式オンラインストア                          |
-|                                                                     | 家電製品や消耗品・別売品をはじめ、検査済み再生品、オンラインストアモデルや定額利用サービスなど、オンラインストアならではの商品やサービスをご用意しています。 |
-|                                                                     | [詳しく見る](https://ec-plus.panasonic.jp/)           |
-+---------------------------------------------------------------------+----------------------------------------+
-| ![サポート総合窓口](https://panasonic.jp/content/panasonic/jp/ja/top/_jcr_content/root/main/componentContainer1/c_lay001_483754143_c_1652233082/c_lay011/c_gen003.coreimg.jpeg/1745393392634/support-pc.jpeg) | サポート総合窓口                                  |
-|                                                                     | 商品についてのお困りごとの総合窓口です。修理のご相談・お申込み方法、カタログや取扱説明書などをご紹介します。    |
-|                                                                     | [詳しく見る](https://panasonic.jp/support/)           |
-+---------------------------------------------------------------------+----------------------------------------+
+| Columns |  |
+| --- | --- |
+| ![Theoretical and Practical Training](/content/images/why-choose.webp) | **Learn Theoretically. Apply Practically.**<br><br>Perfection comes with seamless integration of learning and application! Become a confident driver by getting theoretical and practical Car training at Maruti Suzuki Driving School.<br><br>[VIEW ALL](/why-us) |
 
 ---
 
 +-----------------------------+
 | Section Metadata            |
 +------------------+----------+
-| style            | grey     |
+| style            | white    |
 +------------------+----------+
 
-## 重要なお知らせ
+## Now discover how good a driver you are!
 
-パナソニック製品の安全に関する重要なお知らせです。対象製品をお持ちの方は、必ずご確認ください。
+Test your driving skills before you get on the road. Simply answer these 10 challenging questions and score your best. Gear up and go on!
 
-[製品安全情報を確認する](#)
+| Cards-icon |  |
+| --- | --- |
+| ![10 Minutes](/content/images/quiz-icon-1.png) | **10**<br><br>**MINUTES TO FINISH** |
+| ![10 Questions](/content/images/quiz-icon-2.png) | **10**<br><br>**ENGAGING QUESTIONS** |
+| ![4 Categories](/content/images/quiz-icon-3.png) | **4**<br><br>**INTERESTING QUESTION CATEGORIES** |
+| ![Quiz Winners](/content/images/quiz-icon-4.png) | **4530**<br><br>**QUIZ WINNERS** |
+
+[Get Started](/quiz)
 
 ---
 
@@ -116,21 +71,99 @@
 | style            | light    |
 +------------------+----------+
 
-## ニュース
+## CHOOSE YOUR COURSE TO DRIVE WITH CONFIDENCE ON THE ROAD
 
-+---------------+---------------------------------------------------------------------+
-| **Tabs-News** |                                                                     |
-+---------------+---------------------------------------------------------------------+
-| 新着情報       | 2025年10月29日 - 小型充電式電池の正しい捨て方<br>2025年10月29日 - 【冷蔵庫】コンパクトキッチンにもすっきり収まる。奥行うす型63㎝ NR-FVF45S3 11月下旬発売予定<br>2025年10月21日 - 【エアコン】２５年冬 まとめ買いでお得プレゼントキャンペーン<br>2025年10月3日 - 【掃除機】 本体軽量、さらに掃除性能も兼ね揃えた日本製 紙パック式キャニスター掃除機 MC-JP890K 10月下旬発売予定<br>2025年10月3日 - 【掃除機】パワフルな吸引力が長く続く日本製 サイクロン式キャニスター掃除機 MC-SR640K 10月下旬発売予定 |
-+---------------+---------------------------------------------------------------------+
-| お知らせ       | 2025年10月30日 - 【復旧のご案内】CLUB Panasonic IDを利用するサービスへログインしづらい不具合について<br>2025年10月30日 - CLUB Panasonic IDを利用するサービスへログインしづらい不具合について<br>2025年10月29日 - 小型充電式電池の正しい捨て方<br>2025年10月23日 - 【復旧のご案内】サイト内検索機能の一部が利用出来ない不具合について<br>2025年10月20日 - 【復旧のご案内】お客様確認のためのSMSが送信できない不具合について |
-+---------------+---------------------------------------------------------------------+
-| サポート       | 2025年10月29日 - 小型充電式電池の正しい捨て方<br>2025年10月29日 - 【冷蔵庫】コンパクトキッチンにもすっきり収まる。奥行うす型63㎝ NR-FVF45S3 11月下旬発売予定<br>2025年10月21日 - 【エアコン】２５年冬 まとめ買いでお得プレゼントキャンペーン<br>2025年10月3日 - 【掃除機】 本体軽量、さらに掃除性能も兼ね揃えた日本製 紙パック式キャニスター掃除機 MC-JP890K 10月下旬発売予定<br>2025年10月3日 - 【掃除機】パワフルな吸引力が長く続く日本製 サイクロン式キャニスター掃除機 MC-SR640K 10月下旬発売予定 |
-+---------------+---------------------------------------------------------------------+
-| Panasonic Store Plus | 2025年10月29日 - 小型充電式電池の正しい捨て方<br>2025年10月29日 - 【冷蔵庫】コンパクトキッチンにもすっきり収まる。奥行うす型63㎝ NR-FVF45S3 11月下旬発売予定<br>2025年10月21日 - 【エアコン】２５年冬 まとめ買いでお得プレゼントキャンペーン<br>2025年10月3日 - 【掃除機】 本体軽量、さらに掃除性能も兼ね揃えた日本製 紙パック式キャニスター掃除機 MC-JP890K 10月下旬発売予定<br>2025年10月3日 - 【掃除機】パワフルな吸引力が長く続く日本製 サイクロン式キャニスター掃除機 MC-SR640K 10月下旬発売予定 |
-+---------------+---------------------------------------------------------------------+
-| CLUB Panasonic | 2025年10月30日 - 令和6年能登半島地震災害義援金 受付終了についてのご案内（2025年11月27日(木)17時まで）<br>2025年10月30日 - 【復旧のご案内】CLUB Panasonic IDを利用するサービスへログインしづらい不具合について<br>2025年10月29日 - 小型充電式電池を捨てる際のお願い<br>2025年10月20日 - 【復旧のご案内】お客様確認のためのSMSが送信できない不具合について<br>2025年10月9日 - 【復旧のご案内】CLUB Panasonic IDを利用するサービスへログインしづらい不具合について |
-+---------------+---------------------------------------------------------------------+
+Our meticulously designed courses help transform beginners into skilled and confident drivers. Choose your desired course from a range of driving training courses and master the skill of driving at Maruti Suzuki Driving School.
+
+| Cards |  |
+| --- | --- |
+| ![Learner Detailed Track Course](/content/images/course-learner-detailed.png) | **Learner Detailed Track Course**<br><br>If you've never been behind the steering wheel, this course is for you. At the end of 31 days, you'll know the basic traffic rules and have a hands-on driving experience through simulators and on-road driving.<br><br>**6 Modules** \| **31 Hours**<br><br>₹ 9 000*<br><br>[View Course](/courses/learner-detailed-track-course/learner-dt-course) |
+| ![Advance Course](/content/images/course-advanced.webp) | **Advance Course**<br><br>If you're the one who has a license but feels under-confident while driving alone, this course is for you. At the end of these exciting 8 days, you'll take on the roads effortlessly.<br><br>**3 Modules** \| **8.5 Hours**<br><br>₹ 4 000*<br><br>[View Course](/courses/advance-courses/advanced-course) |
+| ![Learner Standard Track Course](/content/images/course-learner-standard.webp) | **Learner Standard Track Course**<br><br>If you've never been behind the steering wheel, this course is for you. At the end of 21 days, you'll know the basic traffic rules and have a hands-on driving experience.<br><br>**6 Modules** \| **21 Hours**<br><br>₹ 5 500*<br><br>[View Course](/courses/learner-courses/learner-standard-track-course) |
+| ![Learner Extended Track Course](/content/images/course-learner-extended.png) | **Learner Extended Track Course**<br><br>If you've never been behind the steering wheel, this course is for you. At the end of 26 days, you'll know the basic traffic rules and have a hands-on driving experience.<br><br>**6 Modules** \| **26 Hours**<br><br>₹ 7 500*<br><br>[View Course](/courses/learner-extended-track-course/learner-et-course) |
+
+\*Price can vary from city to city. For accurate pricing, please check the course details page. (Prices are exclusive of 18% GST)
+
+---
+
++-----------------------------+
+| Section Metadata            |
++------------------+----------+
+| style            | white    |
++------------------+----------+
+
+## Make the Most of Your Driving Course
+
+Value-Added services customized for you.
+
+| Cards-service |  |
+| --- | --- |
+| ![Assistance on own car](/content/images/service-own-car.png) | **Assistance on own car\***<br><br>Get practical sessions (3 hours) on your own car, which further enhances the learning |
+| ![Training on Upgraded Car Models](/content/images/icon-trainers.png) | **Training on Upgraded Car Models\***<br><br>Learn to drive on upgraded models e.g. Swift, Dzire, Vitara Brezza and Ertiga |
+| ![License Assistance](/content/images/service-license.png) | **License Assistance\***<br><br>Get pick & drop facility and vehicle assistance for license test at RTO |
+
+---
+
++-----------------------------+
+| Section Metadata            |
++------------------+----------+
+| style            | light    |
++------------------+----------+
+
+## We have come closer to you. Now locate us.
+
+Locate A Maruti Suzuki Driving School In Your City.
+
+[SEARCH](/outletlocator)
+
+---
+
++-----------------------------+
+| Section Metadata            |
++------------------+----------+
+| style            | white    |
++------------------+----------+
+
+| Columns |  |
+| --- | --- |
+| ![Corporate Driving Course](/content/images/corporate-training.webp) | **The best way to manage your fleet is to train them**<br><br>This course caters to companies that want to train their drivers & executives and improve their driving skills to ensure their own peace of mind.<br><br>[Get Started](/courses/corporate-courses/corporate-course) |
+
+---
+
++-----------------------------+
+| Section Metadata            |
++------------------+----------+
+| style            | light    |
++------------------+----------+
+
+## Essential Driving Tips
+
+[VIEW ALL](/blog)
+
+| Cards |  |
+| --- | --- |
+| ![Mistakes that most people make while driving](/content/images/blog-mistakes.jpg) | **Mistakes that most people make while driving**<br><br>We must admit that each and every one of us is guilty of making errors while driving. The lessons...<br><br>[Read more](/blog/road-safety-signage/mistakes-that-most-people-make-while-driving) |
+| ![Maruti Suzuki Driving School is revolutionizing](/content/images/blog-revolutionizing.webp) | **Maruti Suzuki Driving School is revolutionizing how Indians learn car driving: We explain**<br><br>Over 2.2 million students, 540+ schools across 260+ Indian cities, 2100+ professional trainers and...<br><br>[read more](/blog/driving-school/maruti-suzuki-driving-school-is-revolutionizing-how-indians-learn-car-driving-we-explain) |
+| ![Everything You Need To Know About Parallel Parking](/content/images/blog-parking.webp) | **Everything You Need To Know About Parallel Parking**<br><br>If you get sweaty palms just thinking about parallel parking, trust us, you are not the only one. Ma...<br><br>[Read more](/blog/driving-tips/everything-you-need-to-know-about-parallel-parking) |
+
+---
+
++-----------------------------+
+| Section Metadata            |
++------------------+----------+
+| style            | white    |
++------------------+----------+
+
+## Frequently Asked Questions
+
+| Accordion |  |
+| --- | --- |
+| How can I find Maruti Suzuki driving school near me? | To find a Maruti Suzuki Driving School near you, navigate to the "School Locator" page on the website. The page has a list of top driving school locations across India at the bottom, or you can simply search by city to find the nearest driving school. |
+| What can a student expect at Maruti Suzuki Driving School? | A student who enrols for Maruti Suzuki Driving School courses will be trained by expert trainers who offer practical driving training through state-of-the-art technology. |
+| How many Maruti Suzuki Driving Schools are there in India? | Maruti Suzuki Driving School has 540+ schools across 260+ cities in India with 2100+ expert trainers. |
+| Is there an age restriction for driving at Maruti Suzuki Driving School? | The minimum age to enroll is 18 years for a car license. For a learner's license, you must be at least 16 years old. |
+| Is there a course for someone who is extremely new to driving? | Yes, we have Learner Standard Track, Learner Extended Track, and Learner Detailed Track courses specifically designed for beginners who have never been behind the wheel. |
+| What is the learning course fee at Maruti Suzuki Driving School? | Course fees range from ₹4,000 for the Advance Course to ₹9,000 for the Learner Detailed Track Course. Prices may vary by city and are exclusive of 18% GST. |
 
 ---
 
@@ -140,6 +173,10 @@
 | style            | dark     |
 +------------------+----------+
 
-![快適なくらしづくりをサポートする会員サイト](https://panasonic.jp/content/panasonic/jp/ja/top/_jcr_content/root/main/componentContainer1/c_lay001_74519150/item/c_lay002/c_gen003.coreimg.png/1688520861263/pc-clubp.png)
+## The Start of Maruti Suzuki Driving School
 
-[CLUB Panasonicに登録する](https://club.panasonic.jp/)
+The Maruti Suzuki Driving School was started way back in 2005. Since then, we have built a strong and widespread network of driving schools that spans over 260+ cities in India, is powered by 2 100+ expert trainers, and has 22 00 000 + happy customers to its credit.
+
+We are a premier, technology-focused chain of car driving schools in India that helps you become confident and skilled drivers with meticulously designed courses. Maruti Suzuki Driving School is also the first company to introduce driving simulators and route maps for better judgement skills and holistic on-road driving practice.
+
+[Find a School Near You](/outletlocator)
